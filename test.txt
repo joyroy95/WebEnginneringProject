@@ -1,0 +1,4 @@
+ALTER TABLE PreviousExamResult
+ADD COLUMN ReqExam Varchar(300) Not NULL;
+ALTER TABLE PreviousExamResult
+ADD FOREIGN KEY (ReqExam) REFERENCES RequiredExam(ReqExam);
